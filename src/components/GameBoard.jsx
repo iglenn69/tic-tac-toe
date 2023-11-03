@@ -9,8 +9,8 @@ export default function GameBoard() {
     {initialGameBoard.map((row, rowIndex) => {
         return <li key={rowIndex}>
             <ol>
-            {row.map((cell, cellIndex) => {
-                return <li key={cellIndex}></li>;
+            {row.map((playerSymbol, cellIndex) => {
+                return <li key={cellIndex}><button>{playerSymbol}</button></li>;
             })}
             </ol>
         </li>;
